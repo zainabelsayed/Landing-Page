@@ -1,0 +1,450 @@
+/*
+ *
+ * CSS written based on SMACSS architecture.
+ * To learn more, visit: http://smacss.com/
+ * 
+ * For simplicity, no reset or normalize is added. 
+ * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
+ *
+*/
+
+
+/* ---- Base Rules ---- */
+html,body{
+    overflow-x: hidden;
+}
+body {
+    position: relative;
+    font-family: 'Oswald','sans-serif';
+    color:black;
+    margin: 0 auto;
+    background-color: rgb(248, 248, 248);
+    font-size: medium;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color:black;
+    width: 100%;
+  }
+ .background-image{
+      width:100%;
+      max-height:720px;
+    }
+.nav {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+    transition: 0.6s;
+  }
+
+.navbar {
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    color:rgb(74, 20,140);;
+    text-align: center;
+    padding: 0px 40px;
+    text-decoration: none;
+    font-size: large;
+}
+.navbar a:hover {
+    font-weight: bolder;
+    transition: 0.6s;
+  }
+.navbar a.active {
+    font-weight: bolder;
+    transition: 0.6s;
+  }
+.navbar .icon {
+display: none;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.info {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-30%, -50%);
+    text-align: left;
+    width: 40%;
+}
+.info h1{
+    font-size:70px;
+    color: rgb(74, 20,140);
+}
+.info a {
+    color: white;
+    text-decoration: none;
+    padding: 4px 15px 4px 15px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-width: medium;
+    border-color:rgb(74, 20,140);
+    background-color: rgb(74, 20,140);
+}
+.social ul{
+    list-style-type: none;
+    position: absolute;
+    bottom: 70px;
+    right: 30px;
+    font-size: xx-large;
+  }
+
+  .social ul li{
+    padding: 10px;
+    color: rgb(74, 20,140);
+  }
+  .about {
+    text-align: center;
+    width: 100%;
+    height: 720px;
+}
+
+.about h1 {
+    position: absolute;
+    color: rgb(74, 20,140);;
+    text-align: center; 
+    width: 10%;
+    border-bottom: 3px solid rgb(74, 20,140);
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 45px;
+}
+.about ul {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: translate(-10%, -60%);
+    text-align: left;
+    width: 40%;
+    list-style-type: none;
+}
+.about ul li{
+    padding: 14px 14px;
+}
+.about-image{
+    position: absolute;
+    top: 60%;
+    left: 90%;
+    transform: translate(-90%, -60%);
+    width: 40%;
+}
+.about-image img{
+    width: 100%;
+    height: 400px;
+}
+.bullet{
+    float: left;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(74, 20,140);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(74, 20,140);
+    text-align: left;
+    opacity: 0.5;
+    margin: 10px;
+}
+.team{
+    text-align: center;
+    max-height: 720px;
+    width: 100%;
+    display: table;
+    margin: 0 auto;
+}
+.team h1 {
+    position: relative;
+    color: rgb(74, 20,140);;
+    text-align: center; 
+    width: 10%;
+    border-bottom: 3px solid rgb(74, 20,140);
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 45px;
+}
+.team ul {
+    position: relative;
+    width: 100%;
+    list-style-type: none;
+    margin-left: 2%;
+    margin-top: 5%;
+    align-items: center;
+}
+.segmant{
+    float: left;
+    position: relative;
+    width: 20%;
+    height: 60%;
+    background-color:rgb(194, 179, 209);
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(233, 219, 247);
+    text-align: center;
+    margin: 5%;
+}
+.avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 1;
+    border-style: solid;
+    border-color: rgb(233, 219, 247);
+    position: relative;
+    top: 5%;
+    left: 0%;
+}
+.segmant p{
+    position: relative;
+    width: 75%;
+    height: 70%;
+    top: 45%;
+    left: 10%;
+}
+
+.faq {
+    position: absolute;
+    top:40%;
+    left: 10%;
+    transform: translate(-10%, -40%);
+    text-align: left;
+    width: 40%;}
+.faq h1 {
+    position: absolute;
+    color: rgb(74, 20,140);
+    width: 10%;
+    border-bottom: 3px solid rgb(74, 20,140);
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    font-size: 45px;
+}
+.faq ul {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-top: 20px;
+}
+.faq ul li{
+    padding: 14px 14px;
+}
+footer{
+    position: relative;
+    text-align: center;
+    height:auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer a {
+    padding:10px 40px;
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.footer a:hover {
+    font-weight: bolder;
+    color:rgb(74, 20,140); ;
+  }
+.footer p{
+    position: absolute;
+    top:50%;
+    left: 50%;
+}
+@media screen and (max-width:900px){
+    .avatar{
+        width: 100px;
+        height: 100px;
+    }
+    .about-image img{
+        max-width: 100%;
+        max-height: 300px;
+    }
+    .faq h1 {
+        position: absolute;
+        top:-20%;
+        width: 10%;
+    }
+    .faq {
+        top:50%;
+        width: 70%;
+    }
+    .faq ul li{
+        padding-top: 20px;
+        padding: 10px 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .background-image{
+        max-width: 100%;
+        max-height: 720px;
+    }
+    .info h1{
+        font-size: xx-large;
+        width: 20%;
+    }
+    .about h1{
+        font-size: x-large;
+        top:15%;
+        width: 20%;
+    }
+    .team h1{
+        padding-top: 30%;
+        font-size: x-large;
+        width: 20%;
+    }
+    .social ul{
+        font-size: large;
+        bottom: 20px;
+        right: 15px;
+    }
+    .avatar{
+        width: 70px;
+        height: 70px;
+    }
+    .navbar a {display: none;}
+    .navbar a.icon {
+      float: left;
+      display: block;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about ul {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        top: 50%;
+        left:10%;
+        width: 80%;
+    }
+    .about-image{
+        position: relative;
+        top: 50%;
+        width: 100%;
+    }
+    .about-image img{
+        max-width: 80%;
+        max-height: 300px;
+    }
+    .about ul li{
+        padding: 7px 7px;
+        text-align: left;
+    }
+    .team ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .segmant{
+        width: 70%;
+    }
+    .faq-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin:0;
+        max-height: 600px;
+    }
+    .faq {
+        position: relative;
+        width: 100%;
+    }
+    .faq h1 {
+        position: absolute;
+        top:20%;
+        width: 10%;
+        font-size:x-large;
+    }
+    
+    .faq ul {
+        position: relative;
+        left: -5%;
+        padding-top: 50%;
+    }
+    .faq ul li{
+        padding: 10px 20px;
+        text-align:left;
+    }
+    .social ul{
+        bottom:7%;
+        right: 5%;
+      }
+    .social ul li{
+        padding: 5px;
+      }
+      .info a {
+        padding: 2px 7px 2px 7px;
+        border-radius: 15px;
+        border-width: medium;
+    }
+    .info{
+        position: absolute;
+        top:70%;
+        left:30%;
+        width: 70%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 5px;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      padding: 5px;
+    }
+  }
+  @media screen and (max-width: 320px){
+    .faq ul {
+        position: relative;
+        padding-top: 85%;
+    }
+    .info{
+        top:90%;
+        width: 90%;
+        font-size: medium;
+    }
+    .info h1{
+        font-size: x-large;
+    }
+    .info a {
+        padding: 1px 3px 1px 3px;
+        border-radius: 12px;
+        border-width: small;
+    }
+    .about ul{
+        padding-top: 40px;
+    }
+    .about ul li{
+        padding: 7px 7px;
+    }
+    .team h1{
+        padding-top: 150px;
+    }
+    .faq ul li{
+        padding: 7px 7px;
+    }
+  }
+ 

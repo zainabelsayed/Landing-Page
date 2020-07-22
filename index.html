@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  
+  <header class="container">
+    <section  id="home">
+          <img src='images/gradient.png' alt='gradient' class="background-image"/>
+    <nav class="nav">
+      
+      <ul id="navbar" class="navbar">
+        <a class="links" href="#home">HOME</a>
+        <a class="links" href="#about">ABOUT</a>
+        <a class="links" href="#team">TEAM</a>
+        <a class="links" href="#faq">FAQ</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </ul>
+    </nav>
+    <div class="info">
+        <h1>Landing Page </h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Morbi fermentum metus faucibus lectus pharetra dapibus. 
+            Suspendisse potenti.
+        </p>
+      <br>
+        <a href='#about'>MORE INFO</a>
+    </div>
+    <div class="social">
+        <ul>
+            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+            <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+            <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+        </ul>
+    </div>
+  </section>
+    </header>
+  <main>
+    <section id="about" data-nav="Section 1" class="container">
+      <div class="about">
+        <h1>ABOUT</h1>
+        <div class="about-image">
+          <img src='images/theme.png' alt='about us image'/>
+      </div>
+        <ul>
+        <li><div class="bullet"></div>Lorem ipsum dolor sit amet, 
+          consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus.
+           </li>
+        <li><div class="bullet"></div>Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo,
+            ut pulvinar quam nunc eu augue
+          Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus.</li>
+          <li><div class="bullet"></div>Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit.
+          Integer nec libero venenatis libero ultricies molestie semper in tellus.
+          </li>
+        </ul>
+        </div>
+    </section>
+    <section id="team" data-nav="Section 2" class="container">
+      <div class="team">
+        <h1>TEAM</h1>
+        <ul>
+        <li><div class="segmant">
+          <img src="images/lady.jpg" alt='avatar' class="avatar"/>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Morbi fermentum metus faucibus lectus pharetra dapibus. 
+            Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.   </p>
+        </div></li>
+        <li><div class="segmant">
+          <img src="images/man.jpg" alt='avatar' class="avatar"/>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Morbi fermentum metus faucibus lectus pharetra dapibus. 
+            Suspendisse potenti.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit.   </p>
+        </div></li>
+        <li><div class="segmant">
+          <img src="images/lady2.jpg" alt='avatar' class="avatar"/>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Morbi fermentum metus faucibus lectus pharetra dapibus. 
+            Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
+        </div></li>
+        </ul>
+
+      </div>
+    </section>
+    <section id="faq" class="container faq-container">
+      <div>
+        <img src='images/background.png' alt='faq' class="background-image"/>
+      </div>
+      <div class="faq">
+        <h1>FAQ</h1>
+        <br>
+        <ul>
+        <li><div class="bullet"></div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus 
+          lectus pharetra dapibus.</li>
+             <li><div class="bullet"></div>Donec bibendum, nulla eget bibendum consectetur,
+                sem nisi aliquam leo, ut pulvinar quam nunc eu augue
+             </li>
+              <li><div class="bullet"></div>Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, 
+                faucibus vitae elit.ut pulvinar quam nunc eu augue.consectetur adipiscing elit. Morbi fermentum metus faucibus 
+             </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <ul>
+      <a class="active" href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#team">TEAM</a>
+      <a href="#faq">FAQ</a>
+    </ul>
+  <p>&copy Udacity</p>
+  </footer>
+ <script src="js/app.js"></script>
+</body>
+</html>
