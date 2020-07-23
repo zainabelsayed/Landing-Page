@@ -12,6 +12,7 @@
 /* ---- Base Rules ---- */
 html,body{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body {
     position: relative;
@@ -158,6 +159,44 @@ display: none;
     opacity: 0.5;
     margin: 10px;
 }
+.services {
+    text-align: center;
+    width: 100%;
+    height: 720px;
+}
+.services-image{
+    width: 80%;
+}
+.services-image img{
+    position: absolute;
+    top:5%;
+    left: 10%;
+    width: 100%;
+    max-height: 720px;
+}
+.services h1 {
+    position: absolute;
+    color: rgb(74, 20,140);;
+    text-align: center; 
+    width: 15%;
+    border-bottom: 3px solid rgb(74, 20,140);
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 45px;
+}
+.services ul {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -60%);
+    text-align: left;
+    width: 40%;
+    list-style-type: none;
+}
+.services ul li{
+    padding: 14px 14px;
+}
 .team{
     text-align: center;
     max-height: 720px;
@@ -189,7 +228,7 @@ display: none;
     position: relative;
     width: 20%;
     height: 60%;
-    background-color:rgb(194, 179, 209);
+    background-image:linear-gradient(rgba(96,0,149,0.7),rgba(192,24,255,0.7),rgba(176,100,255,0.7));
     border-style: solid;
     border-radius: 15px;
     border-color: rgb(233, 219, 247);
@@ -213,8 +252,8 @@ display: none;
     height: 70%;
     top: 45%;
     left: 10%;
+    color: white;
 }
-
 .faq {
     position: absolute;
     top:40%;
@@ -276,6 +315,10 @@ footer{
         max-width: 100%;
         max-height: 300px;
     }
+    .services-image img{
+        top:10%;
+        max-height: 720px;
+    }
     .faq h1 {
         position: absolute;
         top:-20%;
@@ -309,6 +352,11 @@ footer{
         font-size: x-large;
         width: 20%;
     }
+    .services h1{
+        top: 15%;
+        font-size: x-large;
+        width: 20%;
+    }
     .social ul{
         font-size: large;
         bottom: 20px;
@@ -334,6 +382,23 @@ footer{
         top: 50%;
         left:10%;
         width: 80%;
+    }
+    .services ul {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        left:10%;
+        width: 80%;
+        top:80%;
+    }
+    .services-image{
+        position: relative;
+        top: 20%;
+        width: 100%;
+    }
+    .services-image img{
+        width: 100%;
+        max-height: 300px;
     }
     .about-image{
         position: relative;
@@ -439,6 +504,13 @@ footer{
     }
     .about ul li{
         padding: 7px 7px;
+    }
+    .services h1{
+        position: relative;
+        padding-top: 10%;
+    }
+    .services-image{
+        top: 12%;
     }
     .team h1{
         padding-top: 150px;
